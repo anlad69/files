@@ -1,0 +1,15 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<script>
+			function LoadEmbedded(v) {
+				if(!v) return;
+				document.querySelector('video').src = v;
+			}
+		</script>
+	</head>
+	<body style="display: inline-grid;">
+		<input type="text" placeholder="Paste direct video link..." oninput="LoadEmbedded(this.value)">
+		<video controls autoplay></video>
+	</body>
+</html>
